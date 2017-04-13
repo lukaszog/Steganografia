@@ -6,6 +6,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 import scipy.io.wavfile as wav
+import argparse
 from numpy.lib import stride_tricks
 
 """ short time fourier transform of audio signal """
@@ -92,5 +93,8 @@ def plotstft(audiopath, binsize=2 ** 10, plotpath=None, colormap="jet"):
 
     plt.clf()
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-i", "--input", help="Name of the wav file).")
+args = parser.parse_args()
 
-plotstft("final.wav")
+plotstft(args.input)
