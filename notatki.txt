@@ -1,0 +1,6 @@
+python spectrology.py test.bmp -b 13000 -t 19000
+n spectrology.py test.bmp -b 13000 -t 19000
+
+
+python spectrology.py test.bmp -b 13000 -t 19000
+
